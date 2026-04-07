@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Biswas | Developer Portfolio</title>
+  <meta name="description" content="Aditya Biswas — Creative Developer & Designer. Passionate about building modern web apps and dashboards." />
+  <link rel="icon" type="image/png" href="image/Title.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot"></div>
+<div class="cursor-outline"></div>
+
+<!-- Background Orbs -->
+<div class="orbs" aria-hidden="true">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">Aditya.</a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#hero"      class="nav-link">Home</a></li>
+    <li><a href="#about"     class="nav-link">About</a></li>
+    <li><a href="#projects"  class="nav-link">Projects</a></li>
+    <li><a href="#education" class="nav-link">Education</a></li>
+    <li><a href="#skills"    class="nav-link">Skills</a></li>
+    <li><a href="#contact"   class="nav-link">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero">
+  <!-- 3D Canvas Background -->
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-inner">
+    <!-- Left: name + social -->
+    <div class="hero-left reveal">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name bio-trigger" onclick="openBioModal()" title="Click to view Bio-Data">Aditya<br>Biswas</h1>
+      <div class="hero-social">
+        <a href="https://github.com/AdityaBiswas-in" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/iadityabiswas" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100070387002576" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/adityabiswas_/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/i_AdityaBiswas" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Centre: photo -->
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-glow"></div>
+      <img src="image/Aditya_NoBG.png" alt="Aditya Biswas" class="hero-photo" />
+    </div>
+
+    <!-- Right: role -->
+    <div class="hero-right reveal">
+      <p class="hero-tag">Creative</p>
+      <h2 class="hero-role">Developer<br>&amp; Designer</h2>
+      <p class="hero-desc">
+        Passionate about building <strong style="color:var(--purple-lt)">modern web experiences</strong> and crafting clean, functional interfaces.
+      </p>
+      <a href="#about" class="btn-primary" id="explore-btn">
+        Explore My Work <i class="fas fa-arrow-down"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="scroll-indicator" aria-hidden="true">
+    <span>scroll</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-inner">
+
+      <!-- Decorative Left Accent -->
+      <div class="about-accent reveal">
+        <div class="about-accent-bar"></div>
+        <div class="about-badge-stack">
+          <div class="about-badge"><i class="fas fa-code"></i><span>Web Dev</span></div>
+          <div class="about-badge"><i class="fas fa-graduation-cap"></i><span>BCA Student</span></div>
+          <div class="about-badge"><i class="fas fa-rocket"></i><span>Builder</span></div>
+        </div>
+        <div class="about-accent-glow"></div>
+      </div>
+
+      <!-- Content -->
+      <div class="about-content reveal">
+        <p class="section-label">About Me</p>
+        <h2 class="about-passion">
+          <span class="highlight">Coding</span><br>Is My Passion
+        </h2>
+        <p class="about-text">
+          I am <strong>Aditya Biswas</strong>, a <strong>BCA student</strong> 🎓 with a background in Science 🧪. I have a strong passion for <strong>technology and web development</strong> 🌐, and I love building real-world projects while continuously sharpening my technical skills.
+        </p>
+        <p class="about-text">
+          My toolkit includes <strong>C, Python, HTML5, CSS3, and JavaScript</strong> 💻, along with tools like <strong>Canva, GitHub, and Netlify</strong> 🔧. I am currently deep-diving into <strong>SQL</strong> 📊 to expand my backend knowledge.
+        </p>
+        <p class="about-text">
+          I have developed projects like an <strong>E-Commerce Website</strong>, a <strong>College Management Dashboard</strong>, and a <strong>College Website Replica</strong> 🚀. I am always eager to learn new technologies, work on innovative ideas, and grow as a developer 🌱.
+        </p>
+
+        <div class="about-stats">
+          <a href="#projects" class="stat-item">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Projects Completed</span>
+          </a>
+          <a href="#skills" class="stat-item">
+            <span class="stat-num">9+</span>
+            <span class="stat-label">Technologies Used</span>
+          </a>
+          <div class="stat-item">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Curiosity Level</span>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn-primary" style="margin-top:28px">
+          Get In Touch <i class="fas fa-paper-plane"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PROJECTS ══════════ -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2 class="section-title">I Make Incredible<br><span>Projects</span></h2>
+      <p class="section-label" style="margin-top:12px">Flip through my work</p>
+    </div>
+
+    <!-- Book Carousel -->
+    <div class="book-carousel" id="book-carousel">
+
+      <!-- Track -->
+      <div class="book-track" id="book-track">
+
+        <!-- Page 01: College Website Replica -->
+        <div class="book-page" data-index="0">
+          <div class="book-page-inner">
+            <div class="book-page-front">
+              <div class="bp-number">01</div>
+              <div class="bp-content">
+                <span class="bp-tag">Website</span>
+                <h3 class="bp-title">College Website<br>Replica</h3>
+                <p class="bp-tech-label">Technologies Used</p>
+                <p class="bp-tech">HTML, CSS.</p>
+                <a href="" target="_blank" class="bp-link"><i class="fas fa-external-link-alt"></i> View Live</a>
+              </div>
+              <div class="bp-img-wrap bp-img-placeholder">
+                <div class="bp-img-noimg"><i class="fas fa-globe"></i><span>Coming Soon</span></div>
+              </div>
+              <div class="bp-glow"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Page 02: E-Commerce -->
+        <div class="book-page" data-index="1">
+          <div class="book-page-inner">
+            <div class="book-page-front">
+              <div class="bp-number">02</div>
+              <div class="bp-content">
+                <span class="bp-tag">Web App</span>
+                <h3 class="bp-title">E-Commerce<br>Website</h3>
+                <p class="bp-tech-label">Technologies Used</p>
+                <p class="bp-tech">HTML, CSS, JavaScript.</p>
+                <a href="" target="_blank" class="bp-link"><i class="fas fa-external-link-alt"></i> View Live</a>
+              </div>
+              <div class="bp-img-wrap">
+                <img src="image/ecommerce_project.png" alt="E-Commerce Website" class="bp-img" />
+              </div>
+              <div class="bp-glow"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Page 03: College Dashboard -->
+        <div class="book-page" data-index="2">
+          <div class="book-page-inner">
+            <div class="book-page-front">
+              <div class="bp-number">03</div>
+              <div class="bp-content">
+                <span class="bp-tag">Dashboard</span>
+                <h3 class="bp-title">College Management<br>Dashboard</h3>
+                <p class="bp-tech-label">Technologies Used</p>
+                <p class="bp-tech">HTML, CSS, JavaScript, Responsive Design.</p>
+                <a href="https://adityabiswas-in.github.io/Collage_Management_Dashboard/" target="_blank" class="bp-link"><i class="fas fa-external-link-alt"></i> View Live</a>
+              </div>
+              <div class="bp-img-wrap">
+                <img src="image/college_dashboard_project.png" alt="College Management Dashboard" class="bp-img" />
+              </div>
+              <div class="bp-glow"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Page 04: This Portfolio -->
+        <div class="book-page" data-index="3">
+          <div class="book-page-inner">
+            <div class="book-page-front">
+              <div class="bp-number">04</div>
+              <div class="bp-content">
+                <span class="bp-tag">Portfolio</span>
+                <h3 class="bp-title">Developer<br>Portfolio</h3>
+                <p class="bp-tech-label">Technologies Used</p>
+                <p class="bp-tech">HTML, CSS, JavaScript, Three.js, Responsive Design, 3D Animation.</p>
+                <a href="#hero" class="bp-link"><i class="fas fa-eye"></i> You're Here</a>
+              </div>
+              <div class="bp-img-wrap">
+                <img src="image/Portfolio_image.png" alt="Developer Portfolio" class="bp-img" />
+              </div>
+              <div class="bp-glow"></div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /book-track -->
+
+      <!-- Controls -->
+      <button class="book-btn book-btn-prev" id="book-prev" aria-label="Previous project">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="book-btn book-btn-next" id="book-next" aria-label="Next project">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <!-- Dots -->
+      <div class="book-dots" id="book-dots">
+        <button class="book-dot active" data-idx="0" aria-label="Project 1"></button>
+        <button class="book-dot" data-idx="1" aria-label="Project 2"></button>
+        <button class="book-dot" data-idx="2" aria-label="Project 3"></button>
+        <button class="book-dot" data-idx="3" aria-label="Project 4"></button>
+      </div>
+
+    </div><!-- /book-carousel -->
+  </div>
+</section>
+
+<!-- ══════════ EDUCATION ══════════ -->
+<section id="education">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">Academic Journey</p>
+      <h2 class="section-title">My <span>Education</span></h2>
+    </div>
+
+    <div class="edu-timeline">
+
+      <!-- Card 01: College -->
+      <div class="edu-item reveal">
+        <div class="edu-icon-wrap"><i class="fas fa-university"></i></div>
+        <div class="edu-left">
+          <span class="edu-year">2024 – 2028</span>
+        </div>
+        <div class="edu-right">
+          <p class="edu-institution">Bhawanipur Global Campus<br><span style="font-size:0.75em;opacity:0.7">(Formerly NSHM Knowledge Campus, Kolkata)</span></p>
+          <h3 class="edu-degree">Bachelor of Computer Applications | Pursuing</h3>
+          <p class="edu-desc">
+            Currently pursuing BCA with strong focus on full-stack web development, UI/UX design, and building real-world projects. Actively engaged in college cultural life — <strong>volunteered</strong> in the Freshers' Day celebration, handled <strong>accounts &amp; cash management</strong> during the Teachers' Day event, and delivered a <strong>stage performance</strong> at the Freshers' Day festivities, showcasing creativity alongside technical pursuits.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 02: Class 12 -->
+      <div class="edu-item reveal">
+        <div class="edu-icon-wrap"><i class="fas fa-flask"></i></div>
+        <div class="edu-left">
+          <span class="edu-year">2023 – 2024</span>
+        </div>
+        <div class="edu-right">
+          <p class="edu-institution">Aranghata Upendra Memorial Institution</p>
+          <h3 class="edu-degree">Higher Secondary Education (WBCHSE)</h3>
+          <p class="edu-desc">
+            Science stream with <strong>Physics, Chemistry, Mathematics &amp; Biology</strong>. Developed strong analytical thinking and scientific reasoning skills. Beyond academics, actively participated in <strong>school cultural events</strong> — delivering memorable performances on stage and contributing to the vibrant school community.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 03: Class 10 -->
+      <div class="edu-item reveal">
+        <div class="edu-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
+        <div class="edu-left">
+          <span class="edu-year">2021 – 2022</span>
+        </div>
+        <div class="edu-right">
+          <p class="edu-institution">Aranghata Upendra Memorial Institution</p>
+          <h3 class="edu-degree">Secondary Education (WBBSE)</h3>
+          <p class="edu-desc">
+            Completed Secondary education while actively engaging in school life beyond academics. A passionate sportsperson — competed in <strong>Cricket</strong> and <strong>Badminton</strong>, representing the school in inter-school tournaments. Actively participated in various school events and cultural programs, earning <strong>medals and accolades</strong> for athletic performance and school spirit.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SKILLS ══════════ -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-label">What I Know</p>
+      <h2 class="section-title">My <span>Skills</span></h2>
+    </div>
+
+    <div class="skills-logo-grid reveal">
+      <!-- HTML5 -->
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer" class="skill-logo-card">
+        <div class="skill-logo-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+        </div>
+        <span class="skill-logo-name">HTML5</span>
+      </a>
+
+      <!-- CSS3 -->
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer" class="skill-logo-card">
+        <div class="skill-logo-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+        </div>
+        <span class="skill-logo-name">CSS3</span>
+      </a>
+
+      <!-- JavaScript -->
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer" class="skill-logo-card">
+        <div class="skill-logo-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+        </div>
+        <span class="skill-logo-name">JavaScript</span>
+      </a>
+
+      <!-- C -->
+      <a href="https://en.cppreference.com/w/c" target="_blank" rel="noopener noreferrer" class="skill-logo-card">
+        <div class="skill-logo-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
+        </div>
+        <span class="skill-logo-name">C</span>
+      </a>
+
+      <!-- Python -->
+      <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer" class="skill-logo-card">
+        <div class="skill-logo-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+        </div>
+        <span class="skill-logo-name">Python</span>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="skill-logo-card">
+        <div class="skill-logo-icon skill-logo-icon--dark">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+        </div>
+        <span class="skill-logo-name">GitHub</span>
+      </a>
+
+      <!-- Netlify -->
+      <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer" class="skill-logo-card">
+        <div class="skill-logo-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" alt="Netlify" />
+        </div>
+        <span class="skill-logo-name">Netlify</span>
+      </a>
+
+      <!-- VS Code -->
+      <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" class="skill-logo-card">
+        <div class="skill-logo-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
+        </div>
+        <span class="skill-logo-name">VS Code</span>
+      </a>
+
+      <!-- Canva -->
+      <a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer" class="skill-logo-card">
+        <div class="skill-logo-icon">
+          <img src="https://img.icons8.com/color/96/canva.png" alt="Canva" />
+        </div>
+        <span class="skill-logo-name">Canva</span>
+      </a>
+
+      <!-- MS Word -->
+      <a href="https://www.microsoft.com/en-us/microsoft-365/word" target="_blank" rel="noopener noreferrer" class="skill-logo-card">
+        <div class="skill-logo-icon">
+          <img src="https://img.icons8.com/color/96/microsoft-word-2019--v2.png" alt="MS Word" />
+        </div>
+        <span class="skill-logo-name">MS Word</span>
+      </a>
+
+      <!-- MS Excel -->
+      <a href="https://www.microsoft.com/en-us/microsoft-365/excel" target="_blank" rel="noopener noreferrer" class="skill-logo-card">
+        <div class="skill-logo-icon">
+          <img src="https://img.icons8.com/color/96/microsoft-excel-2019--v1.png" alt="MS Excel" />
+        </div>
+        <span class="skill-logo-name">MS Excel</span>
+      </a>
+
+      <!-- MS PowerPoint -->
+      <a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint" target="_blank" rel="noopener noreferrer" class="skill-logo-card">
+        <div class="skill-logo-icon">
+          <img src="https://img.icons8.com/color/96/microsoft-powerpoint-2019--v1.png" alt="MS PowerPoint" />
+        </div>
+        <span class="skill-logo-name">PowerPoint</span>
+      </a>
+
+      <!-- SQL -->
+      <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer" class="skill-logo-card">
+        <div class="skill-logo-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" />
+        </div>
+        <span class="skill-logo-name">SQL</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact">
+  <div class="container contact-container">
+    <div class="section-header reveal">
+      <p class="section-label">Connect With Me</p>
+      <h2 class="section-title">Let's Create <span>Something</span> Amazing</h2>
+    </div>
+
+    <div class="contact-split reveal">
+      <!-- Left: Info & Socials -->
+      <div class="contact-info">
+        <div class="info-card tilt-card">
+          <div class="info-icon"><i class="fas fa-envelope-open-text"></i></div>
+          <div class="info-details">
+            <p class="info-label">Email Me At</p>
+            <p class="info-val">i.adityabiswas.in@gmail.com</p>
+          </div>
+          <button class="copy-email-v2" onclick="copyEmail()" id="copy-email-btn">
+            <i class="fas fa-copy"></i>
+          </button>
+        </div>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=Kolkata,+West+Bengal,+India" target="_blank" class="info-card tilt-card">
+          <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="info-details">
+            <p class="info-label">Location</p>
+            <p class="info-val">Kolkata, West Bengal, India</p>
+          </div>
+        </a>
+
+        <div class="contact-social-grid">
+          <a href="https://github.com/AdityaBiswas-in" target="_blank" class="social-tile tilt-card">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/iadityabiswas" target="_blank" class="social-tile tilt-card">
+            <i class="fab fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://wa.me/918101063371" target="_blank" class="social-tile tilt-card">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+          <a href="https://www.instagram.com/adityabiswas_/" target="_blank" class="social-tile tilt-card">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Contact Form -->
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required placeholder=" " />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder=" " />
+            <label for="email">Email Address</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" required placeholder=" " />
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" required placeholder=" "></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn-primary form-submit">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="reveal">
+  <div class="container footer-container">
+    <div class="footer-flex">
+      <!-- Left: Logo & Socials -->
+      <div class="footer-brand-mini">
+        <a href="#hero" class="footer-logo">Aditya<span>.</span></a>
+        <div class="footer-social-links">
+          <a href="https://github.com/AdityaBiswas-in" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/iadityabiswas" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/adityabiswas_/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/i_AdityaBiswas" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100070387002576" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <!-- Center: Quick Links Inline -->
+      <div class="footer-links-mini">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <!-- Right: Back to Top -->
+      <a href="#hero" class="back-to-top-mini" id="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- Bottom Bar Mini -->
+    <div class="footer-bottom-mini">
+      <p>&copy; 2026 <span>Aditya Biswas</span>. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast Container -->
+<div id="toast-container"></div>
+
+<!-- ══════════ BIO-DATA MODAL ══════════ -->
+<div class="bio-overlay" id="bio-overlay" onclick="closeBioOnOverlay(event)">
+  <div class="bio-modal" id="bio-modal" role="dialog" aria-modal="true" aria-label="Bio Data">
+
+    <!-- Close btn -->
+    <button class="bio-close" onclick="closeBioModal()" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </button>
+
+    <!-- Header -->
+    <div class="bio-header">
+      <div class="bio-avatar">
+        <img src="image/Aditya_NoBG.png" alt="Aditya Biswas" />
+      </div>
+      <div class="bio-header-info">
+        <h2 class="bio-name">Aditya Biswas</h2>
+        <span class="bio-badge"><i class="fas fa-id-card"></i> Bio-Data</span>
+        <div class="bio-quick">
+          <span><i class="fas fa-cake-candles"></i> 21 July</span>
+          <span><i class="fas fa-mars"></i> Male</span>
+          <span><i class="fas fa-flag"></i> Indian</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="bio-body">
+
+      <!-- Contact -->
+      <div class="bio-section">
+        <h3 class="bio-section-title"><i class="fas fa-address-book"></i> Contact Information</h3>
+        <div class="bio-info-row">
+          <span class="bio-info-icon"><i class="fas fa-envelope"></i></span>
+          <span>i.adityabiswas.in@gmail.com</span>
+        </div>
+        <div class="bio-info-row">
+          <span class="bio-info-icon"><i class="fas fa-map-marker-alt"></i></span>
+          <span>Kolkata, West Bengal, India</span>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="bio-section">
+        <h3 class="bio-section-title"><i class="fas fa-graduation-cap"></i> Educational Qualification</h3>
+        <div class="bio-edu-item">
+          <div class="bio-edu-year">2024 – Present</div>
+          <div class="bio-edu-detail">
+            <strong>Bachelor of Computer Applications (BCA)</strong>
+            <span>Bhawanipur Global Campus (formerly NSHM Knowledge Campus)</span>
+          </div>
+        </div>
+        <div class="bio-edu-item">
+          <div class="bio-edu-year">Completed 2024</div>
+          <div class="bio-edu-detail">
+            <strong>Higher Secondary – Science (Class 12)</strong>
+            <span>Aranghata Upendra Memorial Institution</span>
+          </div>
+        </div>
+        <div class="bio-edu-item">
+          <div class="bio-edu-year">Completed 2022</div>
+          <div class="bio-edu-detail">
+            <strong>Secondary (Class 10)</strong>
+            <span>Aranghata Upendra Memorial Institution</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="bio-section">
+        <h3 class="bio-section-title"><i class="fas fa-code"></i> Technical Skills</h3>
+        <div class="bio-skill-grid">
+          <div class="bio-skill-chip"><i class="fas fa-terminal"></i> C</div>
+          <div class="bio-skill-chip"><i class="fab fa-python"></i> Python</div>
+          <div class="bio-skill-chip"><i class="fab fa-html5"></i> HTML5</div>
+          <div class="bio-skill-chip"><i class="fab fa-css3-alt"></i> CSS3</div>
+          <div class="bio-skill-chip"><i class="fab fa-js"></i> JavaScript</div>
+          <div class="bio-skill-chip"><i class="fab fa-github"></i> GitHub</div>
+          <div class="bio-skill-chip"><i class="fas fa-cloud"></i> Netlify</div>
+          <div class="bio-skill-chip"><i class="fas fa-palette"></i> Canva</div>
+          <div class="bio-skill-chip bio-skill-learning"><i class="fas fa-database"></i> SQL <span class="learning-tag">Learning</span></div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="bio-section">
+        <h3 class="bio-section-title"><i class="fas fa-folder-open"></i> Projects</h3>
+        <div class="bio-projects">
+          <div class="bio-project-item"><i class="fas fa-store"></i> E-Commerce Website</div>
+          <div class="bio-project-item"><i class="fas fa-chart-bar"></i> College Management Dashboard</div>
+          <div class="bio-project-item"><i class="fas fa-globe"></i> College Website Replica</div>
+        </div>
+      </div>
+
+      <!-- Career Objective -->
+      <div class="bio-section">
+        <h3 class="bio-section-title"><i class="fas fa-bullseye"></i> Career Objective</h3>
+        <p class="bio-objective">
+          To start my career as an aspiring web developer by applying my skills in web technologies and programming. I aim to build user-friendly applications, learn advanced technologies, and contribute to real-world projects while continuously improving my development skills.
+        </p>
+      </div>
+
+      <!-- Hobbies -->
+      <div class="bio-section">
+        <h3 class="bio-section-title"><i class="fas fa-heart"></i> Hobbies &amp; Interests</h3>
+        <div class="bio-hobbies">
+          <span>🎬 Watching Movies</span>
+          <span>🍥 Watching Anime</span>
+          <span>📚 Informative Videos</span>
+          <span>🏏 Cricket</span>
+          <span>🏸 Badminton</span>
+        </div>
+      </div>
+
+    </div><!-- /bio-body -->
+
+    <!-- Footer -->
+    <div class="bio-footer">
+      <button class="bio-download-btn" onclick="printBio()">
+        <i class="fas fa-print"></i> Print / Save PDF
+      </button>
+    </div>
+
+  </div><!-- /bio-modal -->
+</div>
+
+<script src="script.js"></script>
+<script src="three-scene.js"></script>
+</body>
+</html>
