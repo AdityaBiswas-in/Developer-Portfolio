@@ -1,11 +1,13 @@
-## 🌐 Developer Portfolio
+<h2 align="center">🌐 Developer Portfolio</h2>
 
 <p align="center">
   <img src="https://github.com/AdityaBiswas-in/Developer-Portfolio/blob/7cbb0375bd9ab8177c2dfd0b2f0e6d9883cb2da8/Portfolio_image.png" alt="Portfolio Preview" width="800"/>
 </p>
 
-A fully interactive and modern **Developer Portfolio Website** built using **HTML, CSS, and JavaScript**.  
-This portfolio showcases my projects, skills, and includes a 3D animated UI with a working contact system.
+<p align="center">
+  A fully interactive and modern <b>Developer Portfolio Website</b> built using <b>HTML, CSS, and JavaScript</b>.  
+  This portfolio showcases my projects, skills, and includes a 3D animated UI with a working contact system.
+</p>
 
 ---
 
