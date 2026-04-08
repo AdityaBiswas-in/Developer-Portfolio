@@ -1,7 +1,7 @@
 ## 🌐 Developer Portfolio
 
 <p align="center">
-  <img src="portfolio_image.png" alt="Portfolio Preview" width="800"/>
+  <img src="https://github.com/AdityaBiswas-in/Developer-Portfolio/blob/7cbb0375bd9ab8177c2dfd0b2f0e6d9883cb2da8/Portfolio_image.png" alt="Portfolio Preview" width="800"/>
 </p>
 
 A fully interactive and modern **Developer Portfolio Website** built using **HTML, CSS, and JavaScript**.  
